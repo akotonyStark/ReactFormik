@@ -35,8 +35,10 @@ function login() {
       }) => (
         <form onSubmit={handleSubmit}>
           <input
+            style={{ height: '30px', width: '280px' }}
             type='email'
             name='email'
+            placeholder='Enter email'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
@@ -44,8 +46,10 @@ function login() {
           <br />
           {errors.email && touched.email && errors.email}
           <input
+            style={{ height: '30px', width: '280px' }}
             type='password'
             name='password'
+            placeholder='Enter password'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.password}
